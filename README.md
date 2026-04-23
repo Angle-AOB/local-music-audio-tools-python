@@ -164,9 +164,9 @@ Original MP3 Library → Convert using toOpus → Save 50-70% space + Preserve a
 However, lossy to lossy conversion will definitely reduce quality, but if converting from lossless sources to Opus, it can replace MP3
 ```
 
-### Scenario 2: Clean Up "Fake Lossless" Files
+### Scenario 2: Clean Up "Fake-Lossless" Files
 ```
-Mixed Format Library → Scan using flac_wav_detector → Identify and rename pseudo-lossless files
+Mixed Format Library → Scan using flac_wav_detector → Identify and rename fake-lossless files
 ```
 
 ### Scenario 3: Fix Player Cover Art Issues
@@ -174,7 +174,7 @@ Mixed Format Library → Scan using flac_wav_detector → Identify and rename ps
 Cover Display Problems → Fix using fix_mp3_cover_mime → Normal display in all players
 ```
 
-### Scenario 4: Filter High-Quality Audio
+### Scenario 4: Filter Low-Quality Audio
 ```
 Large MP3 Collection → Detect using low_bitrate_detector → Mark low-quality files for replacement
 ```
@@ -397,7 +397,7 @@ python low_bitrate_detector.py
 封面显示异常 → 使用fix_mp3_cover_mime修复 → 所有播放器正常显示
 ```
 
-### 场景4：筛选高质量音频
+### 场景4：筛选低质量音频
 ```
 大型MP3集合 → 使用low_bitrate_detector检测 → 标记低质量文件以便替换
 ```
